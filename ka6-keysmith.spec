@@ -19,9 +19,10 @@ BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
 BuildRequires:	Qt6Qml-devel >= %{qtver}
 BuildRequires:	Qt6Quick-devel >= %{qtver}
+BuildRequires:	Qt6Svg-devel >= %{qtver}
+%{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
 BuildRequires:	Qt6Widgets-devel
 BuildRequires:	cmake >= 3.20
-BuildRequires:	gettext-tools
 BuildRequires:	gettext-tools
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-kconfig-devel >= %{kframever}
@@ -29,14 +30,16 @@ BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
 BuildRequires:	kf6-kdbusaddons-devel >= %{kframever}
 BuildRequires:	kf6-ki18n-devel >= %{kframever}
 BuildRequires:	kf6-kirigami-devel >= %{kframever}
+BuildRequires:	kf6-kirigami-addons-devel >= 1.7.0
 BuildRequires:	kf6-kwindowsystem-devel >= %{kframever}
+BuildRequires:	kf6-prison
 BuildRequires:	kf6-qqc2-desktop-style-devel >= %{kframever}
 BuildRequires:	libsodium-devel >= 1.0.16
+BuildRequires:	libstdc++-devel >= 6:8
 BuildRequires:	ninja
-BuildRequires:	openssl
-BuildRequires:	python3
+BuildRequires:	openssl-devel
 BuildRequires:	qt6-build >= %{qtver}
-BuildRequires:	rpmbuild(macros) >= 1.164
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	desktop-file-utils
