@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.1
+%define		kdeappsver	26.04.2
 %define		kframever	6.8
 %define		qtver		6.6
 %define		kaname		keysmith
 Summary:	Program to generate 2FA tokens
 Name:		ka6-%{kaname}
-Version:	26.04.1
+Version:	26.04.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	843775ab33407c72ef24eb852b324501
+# Source0-md5:	2cfd806adb140e41789985f3023fb31c
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= %{qtver}
 BuildRequires:	Qt6Core-devel >= %{qtver}
